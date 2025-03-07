@@ -20,6 +20,7 @@ Python is [the most popular programming language today](https://www.tiobe.com/ti
 ## Why
 - It's easy to learn, read, and write.
 - It's in high demand.
+- It's very powerful.
 - It's widely used for: 
   - Machine learning
   - AI
@@ -41,9 +42,16 @@ input("Enter number: ")
 store data in a **variable**:
 ```
 age = 55
+civilization_age = 10_000
+very_big_number = 1.6e40
+binary = 0b1100
 average = 45.67
 name = "Tim"
 winner = True
+placeholder = None
+
+smallest_num = float("-Inf")
+largest_num = float("Inf")
 ```
 
 do math:
@@ -54,6 +62,18 @@ mul = a * b
 div = a / b
 floor_div = a // b
 pow = a ** 2
+rem = a % 2
+```
+
+do bit-wise **&** and **|**:
+```
+return 0b1100 & 0b1010
+return 0b1100 | 0b1010
+```
+
+know the **type** of a variable:
+```
+print(type(a))
 ```
 
 **print** results:
@@ -113,6 +133,7 @@ list = [1, 2, 3]
 
 list[0] = 100
 print(list[-1])
+print(len(list))
 
 for item in list:
     print(item)
@@ -150,6 +171,25 @@ item = list.pop()
 del list[0]
 ```
 
+concatenate two lists with the **+** operator:
+```
+merged = [1, 2, 3] + [4, 5, 6]
+```
+
+**split** a string into an array of strings, then use the delimiter again as a joiner to **join** the strings back into one:
+```
+words = "Hello, World!".split(" ")
+together_again = " ".join(words)
+```
+
+store immutable items, ordered, in a **tuple**:
+```
+person = ("Tim", 55, "M", True)
+print(person[0])
+
+one_item_tuple = (4,)
+```
+
 store key -> value pairs, ordered, as in a **dictionary**:
 ```
 person = {"name": "Tim", "age": 55}
@@ -157,6 +197,9 @@ person = {"name": "Tim", "age": 55}
 person["name"] = "Timothy"
 
 del person["age"]
+
+if "age" in person:
+    print("He has age"!)
 
 for key in person:
     print(person[key])
@@ -168,12 +211,6 @@ long = {1, 2, 3, 4, 5, 6}
 nums = set()
 nums.add(1)
 nums.remove(5)
-```
-
-store immutable items, ordered, in a **tuple**:
-```
-person = ("Tim", 55, "M", True)
-print(person[0])
 ```
 
 **try** something and if it raises an **except**ion, handle it:
