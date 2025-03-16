@@ -227,6 +227,22 @@ if funds < price:
     raise Exception("Too expensive for me")
 ```
 
+**open** a file **with** resources, i.e. close it after you're done
+```
+with open(path) as f:
+    text = f.read()
+``` 
+
+read command line **arg**uments
+```
+book_path = sys.argv[1]
+```
+
+**exit** the program with an error code of 1
+```
+sys.exit(1)
+```
+
 
 
 
