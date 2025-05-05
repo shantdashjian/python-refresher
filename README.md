@@ -9,6 +9,9 @@ A repo to brush up on Python.
   - [Why Not](#why-not)
   - [How Do You](#how-do-you)
 
+<details>
+<summary>What</summary>
+  
 ## What
 Python is [the most popular programming language today](https://www.tiobe.com/tiobe-index/).
 - It was created in 1991 by Guido van Rossum.
@@ -16,9 +19,14 @@ Python is [the most popular programming language today](https://www.tiobe.com/ti
 - It's dynamically typed.
 - It's OOP.
 - It's FP.
+</details>
 
+<details>
+<summary>Why</summary>
+  
 ## Why
 - It's easy to learn, read, and write.
+- It's perfect for coding interviews. The syntax gets out of the way so you focus on solving the problem.
 - It's in high demand.
 - It's very powerful.
 - It's widely used for: 
@@ -27,19 +35,32 @@ Python is [the most popular programming language today](https://www.tiobe.com/ti
   - Data science
   - Backend development
   - DevOps, cloud computing, infrastructure, and automation
+</details>
 
+<details>
+<summary>Why Not</summary>
+  
 ## Why Not
 - It has low performance (slow), so it's not used much for system programming and tools.
 - It's not JavaScript, so it's not used much for UI and frontend development.
+</details>
 
+<details>
+<summary>How Do You?</summary>
+  
 ## How Do You?
 
-**input** data from the user:
+<details>
+<summary><em>input</em> data from the user:</summary>
+
 ```
 input("Enter number: ")
 ```
+</details>
 
-store data in a **variable**:
+<details>
+<summary>store data in a <em>variable</em>:</summary>
+
 ```
 age = 55
 civilization_age = 10_000
@@ -53,8 +74,11 @@ placeholder = None
 smallest_num = float("-Inf")
 largest_num = float("Inf")
 ```
+</details>
 
-do math:
+<details>
+<summary>do math:</summary>
+  
 ```
 sum = a + b
 sub = a - b
@@ -64,25 +88,37 @@ floor_div = a // b
 pow = a ** 2
 rem = a % 2
 ```
+</details>
 
-do bit-wise **&** and **|**:
+<details>
+<summary>do bit-wise <em>&</em> and <em>|</em>:</summary>
+
 ```
 return 0b1100 & 0b1010
 return 0b1100 | 0b1010
 ```
+</details>
 
-know the **type** of a variable:
+<details>
+<summary>know the <em>type</em> of a variable:</summary>
+
 ```
 print(type(a))
 ```
+</details>
 
-**print** results:
+<details>
+<summary><em>print</em> results:</summary>
+  
 ```
 print(result)
 print(f"Result: {result}")
 ```
+</details>
 
-decide **if** you want to do something or **else**:
+<details>
+<summary>decide <em>if</em> you want to do something or <em>else</em>:</summary>
+  
 ```
 if a > b:
     print(a)
@@ -98,8 +134,11 @@ elif a or b:
 elif not c:
     print("NOT")
 ```
+</details>
 
-repeat something **for** a number of times:
+<details>
+<summary>repeat something <em>for</em> a number of times:</summary>
+  
 ```
 for i in range(10):
     print(i)
@@ -110,24 +149,33 @@ for i in range(0, 10, 1):
 for i in range(10, -1, -1):
     print(i)
 ```
+</details>
 
-repeat something **while** a condition is True:
+<details>
+<summary>repeat something <em>while</em> a condition is True:</summary>
+  
 ```
 i = 0
 while i < 5:
     print(i)
     i += 1
 ```
+</details>
 
-**def**ine a function to reuse and organize your code:
+<details>
+<summary><em>def</em>ine a function to reuse and organize your code:</summary>
+  
 ```
 def sum(a, b):
     return a + b
 
 print(sum(1, 2))
 ```
+</details>
 
-store a **list** of data and loop over it:
+<details>
+<summary>store a <em>list</em> of data and loop over it:</summary>
+  
 ```
 list = [1, 2, 3]
 
@@ -138,16 +186,22 @@ print(len(list))
 for item in list:
     print(item)
 ```
+</details>
 
-get a slice of the list:
+<details>
+<summary>get a slice of the list:</summary>
+  
 ```
 slice_a = list[0:5]
 slice_b = list[:5]
 slice_c = list[:]
 slice_d = list[-1:-3:-1]
 ```
+</details>
 
-check if an item is **in** the list or **not**:
+<details>
+<summary>check if an item is <em>in</em> the list or <em>not</em>:</summary>
+  
 ```
 if item in list:
     print("Found")
@@ -155,42 +209,63 @@ if item in list:
 if item not in list:
     print("Not found")
 ```
+</details>
 
-**append** an item to the end of the list:
+<details>
+<summary><em>append</em> an item to the end of the list:</summary>
+  
 ```
 list.append(5)
 ```
+</details>
 
-**pop** an item from the end of the list:
+<details>
+<summary><em>pop</em> an item from the end of the list:</summary>
+  
 ```
 item = list.pop()
 ```
+</details>
 
-**del**ete an item using its index:
+<details>
+<summary><em>del</em>ete an item using its index:</summary>
+  
 ```
 del list[0]
 ```
+</details>
 
-concatenate two lists with the **+** operator:
+<details>
+<summary>concatenate two lists with the <em>+</em> operator:</summary>
+  
 ```
 merged = [1, 2, 3] + [4, 5, 6]
 ```
+</details>
 
-**split** a string into an array of strings, then use the delimiter again as a joiner to **join** the strings back into one:
+<details>
+<summary><em>split</em> a string into an array of strings, then use the delimiter again as a joiner to <em>join</em> the strings back into one:</summary>
+  
 ```
 words = "Hello, World!".split(" ")
 together_again = " ".join(words)
 ```
+</details>
 
-store immutable items, ordered, in a **tuple**:
+<details>
+<summary>store immutable items, ordered, in a <em>tuple</em>:</summary>
+  
 ```
 person = ("Tim", 55, "M", True)
 print(person[0])
 
 one_item_tuple = (4,)
 ```
+</details>
 
-store key -> value pairs, ordered, as in a **dictionary**:
+<details>
+<summary>store key -> value pairs, ordered, as in a <em>dictionary</em>:</summary>
+  
 ```
 person = {"name": "Tim", "age": 55}
 
@@ -204,58 +279,61 @@ if "age" in person:
 for key in person:
     print(person[key])
 ```
+</details>
 
-store unique items, unordered, in a **set**:
+<details>
+<summary>store unique items, unordered, in a <em>set</em>:</summary>
+  
 ```
 long = {1, 2, 3, 4, 5, 6}
 nums = set()
 nums.add(1)
 nums.remove(5)
 ```
+</details>
 
-**try** something and if it raises an **except**ion, handle it:
+<details>
+<summary><em>try</em> something and if it raises an <em>except</em>ion, handle it:</summary>
+  
 ```
 try:
     1 / 0
 except Exception as e:
     print(e)
 ```
+</details>
 
-**raise** an **Exception** yourself:
+<details>
+<summary><em>raise</em> an <em>Exception</em> yourself:</summary>
+  
 ```
 if funds < price:
     raise Exception("Too expensive for me")
 ```
+</details>
 
-**open** a file **with** resources, i.e. close it after you're done
+<details>
+<summary><em>open</em> a file <em>with</em> resources, i.e. close it after you're done</summary>
+  
 ```
 with open(path) as f:
     text = f.read()
-``` 
+```
+</details>
 
-read command line **arg**uments
+<details>
+<summary>read command line <em>arg</em>uments</summary>
+  
 ```
 book_path = sys.argv[1]
 ```
+</details>
 
-**exit** the program with an error code of 1
+<details>
+<summary><em>exit</em> the program with an error code of 1</summary>
+  
 ```
 sys.exit(1)
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</details>
+</details>
